@@ -1,13 +1,118 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  height: auto;
+  width: 100vw;
+  overflow-x: hidden !important;
+}
+.App {
+  min-height: 100vh;
+  width: 100%;
+}
+.box-c {
+  margin-top: 100px !important;
+  /* background-color: gold; */
+  min-height: 93vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.box-c h1,
+h2 {
+  color: gold;
+}
+.box,
+.box-2,
+.box-3 {
+  /* background-color: crimson; */
+  transform: translateY(-15vh);
+  color: white;
+  min-width: 80vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 25px 0;
+  /* padding: 0 !important; */
+}
+.box-c {
+  margin: 15vh 0;
+}
+.box textarea {
+  background-color: #241212;
+  color: rgb(129, 99, 22);
+  outline: none;
+  border: none;
+  margin: 25px 0;
+  min-width: 80vw;
+}
+.btns {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.data {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.box-3 {
+  width: 80vw;
+}
+.dark {
+  background: #41295a; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2f0743,
+    #41295a
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #2f0743,
+    #41295a
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.light * {
+  color: #303030;
+}
+.light h1 {
+  color: #303030;
+}
+.light textarea {
+  background-color: rgb(241, 241, 241);
+  color: #303030;
+}
+.btn {
+  color: rgb(228, 228, 228);
+}
+.light {
+  background: #ffafbd; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ffc3a0,
+    #ffafbd
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ffc3a0,
+    #ffafbd
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.About {
+  color: white;
+  background-color: crimson;
+  height: 100px;
+  width: 100%;
+}
+.Contact {
+  color: white;
+  background-color: rgb(20, 220, 127);
+  height: 100px;
+  width: 100%;
 }
